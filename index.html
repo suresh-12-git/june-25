@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-image: linear-gradient(to right,rgb(185, 182, 182),rgb(33, 33, 215));
+        }
+        h1{
+            background-color: rgb(15, 2, 2);
+            color: white;
+            padding: 4px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .bg-container button{
+            margin-top: 50px;
+            height: 50px;
+            width: 130px;
+            border-radius: 15px;
+            margin-right: 10px;
+            background-color: black;
+            color: white;
+            font-size: large;
+        
+        }
+        .kk{
+            background-color:bisque;
+            align-items: center;
+            height:150px ;
+            width:130px ;
+            border-radius:15px;
+            position:relative;
+            top: 250px;
+            left: 400px;
+            transition: all 2s;
+            
+        }
+        #translate:hover~.kk{
+            transform: translateX(100px) translateY(-100px);
+        }
+        #rotate:hover~.kk{
+            transform: rotateY(360deg)
+        }
+        #skew:hover~.kk{
+            transform: skewX(30deg) skewY(30deg);
+        }
+        #scale:hover~.kk{
+            transform:scale(2) ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TRANSFORM TASK</h1>
+    <div class="bg-container">
+      <button id="translate">TRANLATE</button>
+      <button id="rotate">ROTATE</button>
+      <button id="skew">SKEW</button>
+      <button id="scale"> SCALE</button>
+      <div class="kk"></div>
+    </div>
+   
+</body>
+</html>
